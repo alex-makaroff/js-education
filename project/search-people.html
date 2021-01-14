@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+<script src="search-people.js"></script>
+<link rel="stylesheet" href="search-people.css">
+<link rel="shortcut icon" href="https://img.icons8.com/ios/100/000000/search-contacts.png" type="image/x-icon">
+</head>
+
+<body onload="showPeople()">
+<div class="container"><p>Search people</p></div>
+<div class="container margin-top">
+    <input placeholder="Pattern" id="pattern" type="text" name="commands" size="60" onsubmit="getValue()"/>
+    <input placeholder="Min age" id="minAge" type="text" name="commands" size="60" onsubmit="getValue()"/>
+    <input placeholder="Max age" id="maxAge" type="text" name="commands" size="60" onsubmit="getValue()"/>
+    <button class="button button1" onclick="reset()">Reset</button>
+</div>
+<div class="container">
+    <button class="button button1" onclick="filter()">Find people</button>
+            <button class="button button1 " id="add-people-btn" onclick="showHideAddPeople(true)">Add person</button>
+</div>
+
+<div id="add-people">
+    <div class="container margin">
+        <input placeholder="Name" id="name" type="text" name="commands" size="60" onsubmit="getValue()"/>
+        <input placeholder="Age" id="age" type="text" name="commands" size="60" onsubmit="getValue()"/>
+        <button class="button button1" onclick="appendAddedPeople()">Add</button>
+    </div>
+
+</div>
+
+<div class="container ">
+    <div>
+        <div class="allPeople">People</div>
+        <div id="peopleList" class="people-container"></div>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>
