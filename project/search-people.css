@@ -104,3 +104,10 @@ p {
     vertical-align: bottom;
     display: inline-block;
 }
+.img-button{
+    margin-right: 4px;
+}
+#btn-reset-container{
+    display: flex;
+    align-items: center;
+}
