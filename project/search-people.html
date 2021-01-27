@@ -9,23 +9,29 @@
 </head>
 
 <body onload="showPeople()">
-<div class="container"><p>Search people</p></div>
+
+<div class="container">
+    <button class="button btn-help" onclick="day()">day</button>
+    <button class="button btn-help" onclick="night()">night</button>
+</div>
+
+<div class="container"><p class="title-help">People Database</p></div>
 <div class="container margin-top">
     <input placeholder="Pattern" id="pattern" type="text" name="commands" size="60" onsubmit="getValue()"/>
     <input placeholder="Min age" id="minAge" type="text" name="commands" size="60" onsubmit="getValue()"/>
     <input placeholder="Max age" id="maxAge" type="text" name="commands" size="60" onsubmit="getValue()"/>
-    <button class="button button1 " id="btn-reset-container" onclick="reset()"><img class="img-button" src="https://img.icons8.com/metro/14/ffffff/delete-sign.png"/>Reset</button>
+    <button class="button btn-reset btn-reset-help" id="btn-reset-container" onclick="reset()"><img class="img-button" src="https://img.icons8.com/metro/14/ffffff/delete-sign.png"/>Reset</button>
 </div>
 <div class="container">
-    <button class="button button1" onclick="filter()"><img class="img-button" src="https://img.icons8.com/metro/12/ffffff/search.png"/>Find people</button>
-            <button class="button button1 " id="add-people-btn" onclick="showHideAddPeople(true)"><img class="img-button" src="https://img.icons8.com/metro/12/ffffff/plus-math.png"/>Add person</button>
+    <button class="button btn-help" onclick="filter()"><img class="img-button" src="https://img.icons8.com/metro/12/ffffff/search.png"/>Find people</button>
+            <button class="button btn-help" id="add-people-btn" onclick="showHideAddPeople(true)"><img class="img-button" src="https://img.icons8.com/metro/12/ffffff/plus-math.png"/>Add person</button>
 </div>
 
 <div id="add-people">
     <div class="container margin">
         <input placeholder="Name" id="name" type="text" name="commands" size="60" onsubmit="getValue()"/>
         <input placeholder="Age" id="age" type="text" name="commands" size="60" onsubmit="getValue()"/>
-        <button class="button button1" onclick="appendAddedPeople()"><img class="img-button" src="https://img.icons8.com/metro/12/ffffff/plus-math.png"/>Add</button>
+        <button class="button btn-help" onclick="appendAddedPeople()"><img class="img-button" src="https://img.icons8.com/metro/12/ffffff/plus-math.png"/>Add</button>
     </div>
 
 </div>
@@ -33,10 +39,16 @@
 <div class="container ">
     <div>
         <div class="allPeople">People</div>
-        <div id="peopleList" class="people-container"></div>
+        <div id="peopleList" class="people-container people-help"></div>
     </div>
 
 
+</div>
+<div class="position-relative">
+    <button class="button-theme" onclick="neonTheme()">neon theme</button>
+    <button class="button-theme" onclick="strangeTheme()">strange theme</button>
+    <button class="button-theme" onclick="usualTheme()">usual theme</button>
+    <button class="button-theme" onclick="simpleTheme()">simple theme</button>
 </div>
 
 
