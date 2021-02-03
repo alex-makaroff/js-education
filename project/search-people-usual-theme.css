@@ -120,67 +120,6 @@ p {
     align-items: center;
 }
 
-.strangeTheme-btn{
- background: #007dff;
-}
-
-.strangeTheme-btn-reset{
- background: #ffa400;
-}
-
-.strangeTheme-title{
-    font-size: 55px;
-    margin: 0;
-    border-radius: 50px;
-    padding: 10px 30px;
-    background: #00ff39;
-    color: white;
-}
-
-.strangeTheme-people-list{
-    min-width: 160px;
-    padding: 5px 12px;
-    background: #9d53ac;
-    border-radius: 50px;
-    margin-bottom: 5px;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.neonTheme-btn{
-    box-shadow: 0 0 5px 2px greenyellow;
-    background: none;
-}
-
-.neonTheme-btn-reset{
-    box-shadow: 0 0 5px 2px orange;
-    background: none;
-}
-
-.neonTheme-title{
-    font-size: 55px;
-    margin: 0;
-    border-radius: 50px;
-    padding: 10px 30px;
-    box-shadow: 0 0 20px 5px #5edafd;
-    color: white;
-    background: none;
-}
-
-.neonTheme-people-list{
-    min-width: 160px;
-    padding: 5px 12px;
-    background: none;
-    box-shadow: 0 0 8px 2px red;
-    border-radius: 50px;
-    margin-bottom: 15px;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .usual-theme-btn{
     border: none;
@@ -219,52 +158,16 @@ p {
 }
 
 
-
-.simpleTheme-btn{
-    border: none;
-    padding: 5px 10px;
-    border-radius: 50px;
-    background: #5DFB51;
-    margin: 4px 2px;
-    color: white;
-    cursor: pointer;
-    outline: none;
-    height: 40px;}
-
-.simpleTheme-btn-reset{
-    background: #FF5656;
-}
-
-.simpleTheme-title{
-    font-size: 55px;
-    margin: 0;
-    border-radius: 50px;
-    padding: 10px 30px;
-    background: #FFC154;
-    color: white;
-}
-
-.simpleTheme-people-list{
-    min-width: 160px;
-    padding: 5px 12px;
-    background: #5465FF;
-    border-radius: 50px;
-    margin-bottom: 5px;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .position-relative {
     width: 150px;
     height: 332px;
     position: relative;
     bottom: 855px;
     left: 92%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 1;
 }
 
 .button-theme{
@@ -274,7 +177,6 @@ p {
     border-radius: 25px;
     background: white;
 }
-
 .change-lng{
     width: 150px;
     height: 332px;
@@ -284,9 +186,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 2;
-
 }
 .button-lng{
-font-size: 20px;
+    font-size: 20px;
 }

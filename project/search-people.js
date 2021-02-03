@@ -189,100 +189,53 @@ function reset () {
     document.getElementById('maxAge').value = '';
 }
 
-function day () {
-    document.body.style.backgroundColor = 'white';
-}
-function night () {
+function neonTheme () {
+    document.getElementById('change-theme').href = 'search-people-neon-theme.css';
     document.body.style.backgroundColor = '#3f3f47';
 }
-
-function neonTheme () {
-    const elemenstBtn = document.getElementsByClassName('btn-help');
-    for (const ell of elemenstBtn) {
-        ell.classList.remove('usual-theme-btn', 'neonTheme-btn', 'strangeTheme-btn', 'simpleTheme-btn');
-        ell.classList.add('neonTheme-btn');
-    }
-    const elementBtnReset = document.getElementsByClassName('btn-reset-help');
-    for (const ell of elementBtnReset) {
-        ell.classList.remove('usual-theme-btn-reset', 'neonTheme-btn-reset', 'strangeTheme-btn-reset', 'simpleTheme-btn-reset');
-        ell.classList.add('neonTheme-btn-reset');
-    }
-    const elementTitle = document.getElementsByClassName('title-help');
-    for (const ell of elementTitle) {
-        ell.classList.remove('usual-theme-title', 'neonTheme-title', 'strangeTheme-title', 'simpleTheme-title');
-        ell.classList.add('neonTheme-title');
-    }
-    const elementPeople = document.getElementsByClassName('people');
-    for (const ell of elementPeople) {
-        ell.classList.remove('usual-theme-people-list', 'neonTheme-people-list', 'strangeTheme-people-list', 'simpleTheme-people-list');
-        ell.classList.add('neonTheme-people-list');
-        night();
-    }
-}
-
-function usualTheme () {
-    const elemenstBtn = document.getElementsByClassName('btn-help');
-    for (const ell of elemenstBtn) {
-        ell.classList.remove('usual-theme-btn', 'neonTheme-btn', 'strangeTheme-btn', 'simpleTheme-btn');
-        ell.classList.add('usualTheme-btn');
-    }
-    const elementBtnReset = document.getElementsByClassName('btn-reset-help');
-    for (const ell of elementBtnReset) {
-        ell.classList.remove('usual-theme-btn-reset', 'neonTheme-btn-reset', 'strangeTheme-btn-reset', 'simpleTheme-btn-reset');
-        ell.classList.add('usualTheme-btn-reset');
-    }
-    const elementTitle = document.getElementsByClassName('title-help');
-    for (const ell of elementTitle) {
-        ell.classList.remove('usual-theme-title', 'neonTheme-title', 'strangeTheme-title', 'simpleTheme-title');
-        ell.classList.add('usualTheme-title');
-    }
-    const elementPeople = document.getElementsByClassName('people');
-    for (const ell of elementPeople) {
-        ell.classList.remove('usual-theme-people-list', 'neonTheme-people-list', 'strangeTheme-people-list', 'simpleTheme-people-list');
-        ell.classList.add('usualTheme-people-list');
-    }
+function simpleTheme () {
+    document.getElementById('change-theme').href = 'search-people-simple-theme.css';
+    document.body.style.backgroundColor = 'white';
 }
 function strangeTheme () {
-    const elemenstBtn = document.getElementsByClassName('btn-help');
-    for (const ell of elemenstBtn) {
-        ell.classList.remove('usual-theme-btn', 'neonTheme-btn', 'strangeTheme-btn', 'simpleTheme-btn');
-        ell.classList.add('strangeTheme-btn');
-    }
-    const elementBtnReset = document.getElementsByClassName('btn-reset-help');
-    for (const ell of elementBtnReset) {
-        ell.classList.remove('usual-theme-btn-reset', 'neonTheme-btn-reset', 'strangeTheme-btn-reset', 'simpleTheme-btn-reset');
-        ell.classList.add('strangeTheme-btn-reset');
-    }//
-    const elementTitle = document.getElementsByClassName('title-help');
-    for (const ell of elementTitle) {
-        ell.classList.remove('usual-theme-title', 'neonTheme-title', 'strangeTheme-title', 'simpleTheme-title');
-        ell.classList.add('strangeTheme-title');
-    }
-    const elementPeople = document.getElementsByClassName('people');
-    for (const ell of elementPeople) {
-        ell.classList.remove('usual-theme-people-list', 'neonTheme-people-list', 'strangeTheme-people-list', 'simpleTheme-people-list');
-        ell.classList.add('strangeTheme-people-list');
-    }
+    document.getElementById('change-theme').href = 'search-people-strange-theme.css';
+    document.body.style.backgroundColor = 'white';
 }
-function simpleTheme () {
-    const elemenstBtn = document.getElementsByClassName('btn-help');
-    for (const ell of elemenstBtn) {
-        ell.classList.remove('usual-theme-btn', 'neonTheme-btn', 'strangeTheme-btn', 'simpleTheme-btn');
-        ell.classList.add('simpleTheme-btn');
+function usualTheme () {
+    document.getElementById('change-theme').href = 'search-people-usual-theme.css';
+    document.body.style.backgroundColor = 'white';
+}
+
+const translations = {
+    ru: {
+        title: 'База данных людей',
+        'btn-reset-container': 'убрать',
+        'finde-people': 'найти людей',
+        'add-person': 'добавить',
+        'add-people-btn': 'добавить человека',
+        lng: 'EN'
+    },
+    en: {
+        title: 'People Database',
+        'btn-reset-container': 'reset',
+        'finde-people': 'finde peopole',
+        'add-person': 'add',
+        'add-people-btn': 'add person',
+        lng: 'RU'
     }
-    const elementBtnReset = document.getElementsByClassName('btn-reset-help');
-    for (const ell of elementBtnReset) {
-        ell.classList.remove('usual-theme-btn-reset', 'neonTheme-btn-reset', 'strangeTheme-btn-reset', 'simpleTheme-btn-reset');
-        ell.classList.add('simpleTheme-btn-reset');
-    }//
-    const elementTitle = document.getElementsByClassName('title-help');
-    for (const ell of elementTitle) {
-        ell.classList.remove('usual-theme-title', 'neonTheme-title', 'strangeTheme-title', 'simpleTheme-title');
-        ell.classList.add('simpleTheme-title');
-    }
-    const elementPeople = document.getElementsByClassName('people');
-    for (const ell of elementPeople) {
-        ell.classList.remove('usual-theme-people-list', 'neonTheme-people-list', 'strangeTheme-people-list', 'simpleTheme-people-list');
-        ell.classList.add('simpleTheme-people-list');
-    }
+};
+
+let currentLng = 'en';
+
+function switchLng () {
+    currentLng = currentLng === 'ru' ? 'en' : 'ru';
+    const trans = translations[currentLng];
+    const keys = Object.keys(trans);
+    keys.forEach((id) => {
+        const text = trans[id];
+        const el = document.getElementById(id);
+        if (el) {
+            el.innerHTML = text;
+        }
+    });
 }
